@@ -24,9 +24,9 @@ const useStyles = makeStyles({
 function Home() {
   const classes= useStyles()
   const [comic, setComic] = useState({})
-  const [stars, setStars] = useState([1,2,3,4,5])
   const [point, setPoint] = useState(0)
   const [disabled, setdisabled] = useState(false)
+  const stars = [1,2,3,4,5]
 
   const getComic = ( options = {}) =>{
     const proxyUrl = 'https://cors-anywhere.herokuapp.com'
