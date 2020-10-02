@@ -15,7 +15,10 @@ const useStyles = makeStyles({
     cursor: 'pointer',
   },
   gray:{
-    color:'#a9a9a9'
+    color:'#a9a9a9',
+    '&:hover': {
+      color: "#ffdd35",
+    }
   },
   bgBasic:{
     backgroundColor:'#1b99f3 !important'
@@ -67,9 +70,6 @@ function Home() {
       <Box component="h1" textAlign="center">
         Comics aleatorios
       </Box>
-      <Box component="p" fontStyle="italic" textAlign="center">
-        No olvides calificar tu comic favorito
-      </Box>
       <Grid container justify="center">
         <Grid item md={6} xs={12} >
           <Box 
@@ -89,6 +89,9 @@ function Home() {
               repellendus nihil non ex quisquam quas ut impedit asperiores, possimus 
               eveniet quo perferendis, voluptatem dolorum enim temporibus molestiae? Laborum.
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, odio tempore. 
+            </Box>
+            <Box component="p" fontStyle="italic" textAlign="center">
+              ¿Cómo te pareció esté comic?
             </Box>
             <Box mb="1em">
             {stars.map((number) =>
