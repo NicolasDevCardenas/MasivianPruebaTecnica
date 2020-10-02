@@ -46,6 +46,7 @@ function Home() {
     })
     .then(resp => resp.json())
     .then(res =>{ 
+      setPoint(0);
       setdisabled(false);
       setComic(res)
     })
