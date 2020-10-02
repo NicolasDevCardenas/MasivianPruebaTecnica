@@ -8,6 +8,10 @@
 
 En el directorio del proyecto puedes ejecutar:
 
+### `yarn install`
+
+Para instalar todas las dependencias.
+
 ### `yarn start`
 
 Corre la aplicaciòn en modo desarrollo.<br />
