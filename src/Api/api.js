@@ -8,6 +8,6 @@ const headers = {
 };
 
 export async function getComic() {
-    const response = await axios.get('http://xkcd.com/614/info.0.json', {headers})
+    const response = await axios.get('https://xkcd.com/614/info.0.json', {headers})
   return response;
 }
